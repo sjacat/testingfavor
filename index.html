@@ -3,49 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PawGress Tasks</title>
+  <title>Pawgress Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="navbar">
+    <div class="logo">🐾</div>
+    <ul>
+      <li>Dashboard</li>
+      <li class="active">Tasks</li>
+      <li>Challenges</li>
+      <li>Store</li>
+    </ul>
+    <div class="coins">🪙 0 | Gabgab</div>
+  </div>
+
   <div class="container">
-    <nav>
-      <ul>
-        <li>Dashboard</li>
-        <li class="active">Tasks</li>
-        <li>Challenges</li>
-        <li>Store</li>
-      </ul>
-      <div class="coins">💰 0</div>
-    </nav>
+    <div class="pet-section">
+      <img src="https://i.imgur.com/GKzF6eC.png" alt="Pet" class="pet-image">
+      <div class="stats">
+        <div class="bar blue">0/100</div>
+        <div class="bar red">50/50</div>
+        <div class="bar yellow">50/50</div>
+      </div>
+    </div>
 
-    <div class="content">
-      <div class="pet-section">
-        <img src="https://i.imgur.com/UYp8ZgE.png" alt="Dog" class="pet">
-        <div class="bars">
-          <div class="bar xp"><span>XP</span><div class="fill" style="width:0%"></div></div>
-          <div class="bar hp"><span>❤️</span><div class="fill" style="width:100%"></div></div>
-          <div class="bar energy"><span>⚡</span><div class="fill" style="width:100%"></div></div>
+    <div class="tasks-section">
+      <h2>TASKS</h2>
+      <div class="tabs">
+        <span class="active">Active</span>
+        <span>Completed</span>
+        <span>Habits</span>
+      </div>
+
+      <div class="task-list">
+        <div class="task">
+          <div class="energy">⚡10</div>
+          <label><input type="checkbox"> 10 Minutes Cardio</label>
+        </div>
+        <div class="task">
+          <div class="energy">⚡5</div>
+          <label><input type="checkbox"> 10 Morning Stretch</label>
+        </div>
+        <div class="task">
+          <div class="energy">⚡15</div>
+          <label><input type="checkbox"> 2000 Steps a Day</label>
+        </div>
+        <div class="task">
+          <div class="energy">⚡5</div>
+          <label><input type="checkbox"> Do Neck and Shoulder Rolls</label>
+        </div>
+        <div class="task">
+          <div class="energy">⚡2</div>
+          <label><input type="checkbox"> Reach for the Ceiling</label>
         </div>
       </div>
 
-      <div class="tasks-section">
-        <h2>TASKS</h2>
-        <div class="tabs">
-          <span class="active">Active</span>
-          <span>Completed</span>
-          <span>Habits</span>
-        </div>
-
-        <div class="task-list">
-          <div class="task"><span class="energy">⚡10</span><input type="checkbox"> 10 Minutes Cardio</div>
-          <div class="task"><span class="energy">⚡5</span><input type="checkbox"> 10 Morning Stretch</div>
-          <div class="task"><span class="energy">⚡15</span><input type="checkbox"> 2000 Steps a Day</div>
-          <div class="task"><span class="energy">⚡5</span><input type="checkbox"> Do Neck and Shoulder Rolls</div>
-          <div class="task"><span class="energy">⚡2</span><input type="checkbox"> Reach for the Ceiling</div>
-        </div>
-
-        <button class="add-btn">+ Add a Habit</button>
-      </div>
+      <p class="note">Habits are flexible; you can complete them as many times as you like each day.</p>
+      <button class="add-btn">+ Add a Habit</button>
     </div>
   </div>
 </body>
